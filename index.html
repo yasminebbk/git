@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+<style>
+    body{
+        background-image: url(kk.jpg);
+    }
+</style>
 <body>
     <header>
-                 <ul>
+                 <ul class="nav">
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#work">work</a></li>
@@ -17,13 +23,11 @@
 <main>
     <section id="home">
         <img src="images/metro3.jpg" alt="frutiger metro">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WANVFEoxMxQ?si=vrB81NFZ2-GSvC5y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       <div class="img"> 
-        <img src="images/metro.jpg">
-        <img src="images/metro2.jpg">
-       </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WANVFEoxMxQ?si=vrB81NFZ2-GSvC5y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+     <img src="images/metro.jpg" width="50%">
+    <img src="images/metro2.jpg"width="50%">
     </section>
-    <table>
+    <table class="box">
         <tr>
             <th>history</th>
             <th>Beginnings (Early/Mid-2000s)</th>
@@ -50,15 +54,16 @@
             <td>Flat Metro</td>
         </tr>
     </table>
-    <form>
+    <form class="box2">
         <label for="email">email:</label>
         <input type="text" id="email" name="email"><br>
         <label for="pass">password:</label>
         <input type="password" id="pass" name="pass"><br>  
+        <button> sign in </button>
     </form>
-    <button> sign in </button>
+
 </main>
-<footer>
+<footer class="footer">
     <section id="contact">
         Continuation (or, renaissance): Glassmorphism; by 2017, https://en.wikipedia.org/wiki/Fluent_Design_System, while started in 2013 with the release of iOs 7
 <br>
