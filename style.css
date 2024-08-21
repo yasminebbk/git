@@ -1,20 +1,173 @@
-.nav li{
-background-color: greenyellow;
-    display: inline;
-    font-family: 'Roboto';font-size: 22px;
+body {
+font-family: sans-serif;
+color: #252525;
 }
 
-.footer{
-    background-color: rgb(150, 238, 92);
-
-}
-
-.box{
-    background-color: rgb(81, 180, 81);
-}
-
-.box2{
-    background-color: rgb(131, 148, 103);
+.introduction{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
 }
+a {
+color: grey;
+text-decoration: none;
+}
+
+.active {
+    color: #5dc6b0;
+}
+
+.docplanner-header{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid grey;
+}
+
+.introduction {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.lead__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.introduction-title {
+    color: #5dc6b0;
+}
+
+.introduction-text{
+    display: flex;
+}
+
+.introduction-p {
+margin: 10px;
+color: gray;
+}
+
+.services {
+    display: flex;
+}
+
+.service-card{
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    position: relative;
+
+}
+
+.service-card-patients{
+background-color: #5dc6b0;
+color: #ffffff;
+}
+
+.service-card-doctors{
+background-color: #4293db;
+color: #ffffff;
+}
+
+.service-card-clinics{
+background-color: #423f3f;
+color: #ffffff;
+}
+
+.service-card-select1{
+    background-color: #5dc6b0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.service-card-select2{
+    background-color: #4293db;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.service-card-select3{
+    background-color: #423f3f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.introduction-title2{
+    color: #5dc6b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .office {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .office:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .office__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+
+  .office__desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .office__desc button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .office__desc button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .office__desc button {
+      font-size: 14px;
+    }
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(23, 62, 125);
+  }
+
